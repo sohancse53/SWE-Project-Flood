@@ -3,6 +3,8 @@ import { Link, NavLink } from 'react-router';
 import userLogo from '../assets/user.png'
 import { AuthContext } from '../provider/AuthContext';
 import logo from '../assets/logo.png'
+
+import DateTime from './DateTime';
 const Navbar = () => {
     const {user,signOutUser} = use(AuthContext);
     const handleSignOut = ()=>{
@@ -41,7 +43,10 @@ const Navbar = () => {
         {links}
       </ul>
     </div>
-    <Link to="/" className="  cursor-pointer"><img className='w-16 h-16 rounded-full shadow' src={logo} alt={logo} /></Link>
+    <div>
+      <Link to="/" className="  cursor-pointer"><img className='w-16 h-16 rounded-full shadow' src={logo} alt={logo} /></Link>
+     <DateTime/>
+    </div>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

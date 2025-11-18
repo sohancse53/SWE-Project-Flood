@@ -6,6 +6,7 @@ import NewsLetter from '../components/NewsLetter';
 import Headlines from '../components/Headlines';
 import RecentDisasters from '../components/RecentDisasters';
 
+
 const Home = () => {
   
     
@@ -17,6 +18,7 @@ const Home = () => {
            {/* <PopularGames disasters={disasters}/> */}
            <RecentDisasters/>
            <NewsLetter/>
+        
         </div>
     );
 };

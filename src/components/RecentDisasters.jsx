@@ -23,7 +23,7 @@ const RecentDisasters = () => {
   if (loading) return <LoadingSpinner />;
   return (
     <div className="my-10 flex justify-center flex-col">
-      <h1 className="text-center text-3xl font-bold  text-red-700">
+      <h1 className="text-center text-3xl font-semibold underline  text-accent">
         Most Recent Disasters
       </h1>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

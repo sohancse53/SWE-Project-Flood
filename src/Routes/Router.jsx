@@ -34,7 +34,7 @@ const router = createBrowserRouter([
             {
                 path:'/disasters',
                 element:<Disasters/>,
-                loader:()=>fetch('https://eonet.gsfc.nasa.gov/api/v2.1/events?limit=10'),
+                loader:()=>fetch('https://eonet.gsfc.nasa.gov/api/v2.1/events?limit=50'),
                    hydrateFallbackElement:<LoadingSpinner></LoadingSpinner>,
                
             },
