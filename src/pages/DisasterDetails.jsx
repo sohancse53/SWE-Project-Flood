@@ -40,6 +40,13 @@ const DisasterDetails = () => {
 
   const position = latitude && longitude ? [latitude, longitude] : null;
 
+  const customIcon = L.icon({
+    iconUrl:'/marker.png',
+    iconSize:[32,32],
+    
+  })
+
+
   if (loading) return <LoadingSpinner />;
 
   return (
@@ -66,7 +73,7 @@ const DisasterDetails = () => {
               attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker position={position}>
+            <Marker position={position} icon={customIcon}>
               <Popup>
                 <strong>{event?.title}</strong><br />
                 Date: {date ? new Date(date).toLocaleString() : "Unknown"}<br />
