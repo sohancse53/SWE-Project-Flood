@@ -6,7 +6,7 @@ const DateTime = () => {
     console.log(data);
     
     return (
-        <div className='text-lg md:text-2xl font-semibold text-accent '>
+        <div className='md:text-lg  font-bold text-blue-800 '>
             {
                 data
             }

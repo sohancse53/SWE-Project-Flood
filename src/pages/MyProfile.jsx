@@ -6,7 +6,7 @@ import { Link } from "react-router";
 const MyProfile = () => {
   const { user } = use(AuthContext);
   return (
-    <div className="min-h-[80vh] flex items-center justify-center bg-gradient-to-b from-slate-50 to-slate-100 p-6">
+    <div className="min-h-[80vh] flex items-center justify-center   p-6">
       <title>My profile</title>
       <div className="w-full max-w-md bg-white border border-slate-200 shadow-lg rounded-2xl p-8 text-center">
         {/* Profile Picture */}

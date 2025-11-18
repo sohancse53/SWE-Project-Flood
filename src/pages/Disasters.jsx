@@ -16,7 +16,7 @@ const Disasters = () => {
 
   return (
    <div>
-    <h1 className='text-4xl text-primary font-bold text-center my-10'>All Disasters</h1>
+    <h1 className='text-4xl text-primary font-bold text-center my-10'>All Disasters - <span className='text-secondary'>{sorted.length}</span></h1>
   {
     loading ? <LoadingSpinner/>
     :

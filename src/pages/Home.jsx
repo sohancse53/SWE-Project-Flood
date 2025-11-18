@@ -1,14 +1,15 @@
 import React from 'react';
 import Banner from '../components/Banner';
 // import PopularGames from '../components/PopularGames';
-import { useLoaderData } from 'react-router';
+import { useLoaderData, useNavigation } from 'react-router';
 import NewsLetter from '../components/NewsLetter';
 import Headlines from '../components/Headlines';
 import RecentDisasters from '../components/RecentDisasters';
+import LoadingSpinner from '../components/LoadingSpinner';
 
 
 const Home = () => {
-  
+    const navigation = useNavigation()
     const data = useLoaderData();
     const events = data.events;
     const latest = []
@@ -19,8 +20,10 @@ const Home = () => {
     console.log(latest);
     
     
-    return (
-        <div>
+    return (<>
+      {
+        navigation.state === 'loading'?<LoadingSpinner/>:
+          <div>
             <title>Home</title>
            <Headlines latest={latest}/>
            <Banner/>
@@ -29,6 +32,8 @@ const Home = () => {
            <NewsLetter/>
         
         </div>
+      }
+      </>
     );
 };
 

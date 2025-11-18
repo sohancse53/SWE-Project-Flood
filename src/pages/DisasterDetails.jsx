@@ -61,7 +61,7 @@ const DisasterDetails = () => {
       {/* Map Card */}
       {position ? (
         <div className="h-[60vh] rounded-lg shadow-md overflow-hidden border">
-          <MapContainer center={position} zoom={12} scrollWheelZoom={false} className="h-full">
+          <MapContainer center={position} zoom={8} scrollWheelZoom={false} className="h-full">
             <TileLayer
               attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

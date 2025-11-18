@@ -1,6 +1,7 @@
 import React, { use, useRef, useState } from "react";
 import { Link, Navigate, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../provider/AuthContext";
+import toast from "react-hot-toast";
 
 const Login = () => {
   const [email,setEmail] = useState('')
@@ -20,7 +21,7 @@ const Login = () => {
     .then(result=>{
         console.log(result.user);
         setUser(result.user);
-        alert('Log-In Successful')
+        toast.success('Log-In Successful')
          navigate(location.state || '/');
     })
     .catch(e=>{
@@ -38,11 +39,11 @@ const Login = () => {
         const loggedInUser = result.user;
         console.log("Logged in user:", loggedInUser);
         if (!loggedInUser.emailVerified) {
-          alert("Your Email is not verified");
+          toast.success("Your Email is not verified");
           setUser(null);
           return;
         }
-        alert("Login successful!");
+        toast.success("Login successful!");
         navigate(location.state || '/');
       })
       .catch((e) => {

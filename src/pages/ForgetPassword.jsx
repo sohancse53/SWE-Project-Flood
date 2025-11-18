@@ -3,6 +3,7 @@ import React, { use } from "react";
 import { Link, Navigate, useLocation, useNavigate } from "react-router";
 import { auth } from "../firebase/firebase.config";
 import { AuthContext } from "../provider/AuthContext";
+import toast from "react-hot-toast";
 
 const ForgetPassword = () => {
   const { state } = useLocation();
@@ -19,12 +20,12 @@ const ForgetPassword = () => {
    console.log(email);
    sendPasswordResetEmail(auth, email)
   .then(() => {
-    alert(`Password Reset mail has been send to ${email}`)
+    toast.info(`Password Reset mail has been send to ${email}`)
     window.open("https://mail.google.com", "_blank");
   })
   .catch((error) => {
     const errorMessage = error.message;
-    alert(errorMessage)
+    toast.error(errorMessage)
     // ..
   });
     

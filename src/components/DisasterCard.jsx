@@ -24,7 +24,7 @@ const DisasterCard = ({event}) => {
 
   return (
     <div className="flex justify-center mt-10">
-  <div className="max-w-md w-full bg-white shadow-lg rounded-xl overflow-hidden border border-gray-200 flex flex-col h-full">
+  <div className=" w-full bg-white shadow-lg rounded-xl overflow-hidden border border-gray-200 flex flex-col h-full">
     <div className="p-6 flex flex-col flex-1">
       <h2 className="text-2xl font-bold text-red-600 mb-2">{name}</h2>
 
@@ -58,7 +58,7 @@ const DisasterCard = ({event}) => {
 
       <Link
         to={`/disasters-details/${id}`}
-        className="mt-auto btn btn-secondary"
+        className="mt-auto btn btn-outline"
       >
         View More Details
       </Link>

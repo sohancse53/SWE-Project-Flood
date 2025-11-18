@@ -1,6 +1,7 @@
 import React, { use } from "react";
 import { Link } from "react-router";
 import { AuthContext } from "../provider/AuthContext";
+import toast from "react-hot-toast";
 
 const UpdateProfile = () => {
   const { updateUser,user,setUser } = use(AuthContext);
@@ -11,10 +12,10 @@ const UpdateProfile = () => {
     updateUser({ displayName, photoURL })
    .then(()=>{
     setUser({...user,displayName,photoURL})
-    alert("Your profile have been Update");
+    toast.success("Your profile have been Update");
    })
    .catch(er=>{
-    alert(er.message);
+    toast.error(er.message);
    })
 
   };
