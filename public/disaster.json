@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "type": "Cyclone",
+    "name": "Cyclone Amara",
+    "severity": "Severe",
+    "location": { "lat": 22.5, "lon": 89.0, "city": "Chittagong" },
+    "predicted_path": [
+      { "lat": 22.5, "lon": 89.0 },
+      { "lat": 23.0, "lon": 89.5 }
+    ],
+    "wind_speed": "120 km/h",
+    "alert_level": "Red",
+    "date": "2025-10-23T08:00:00Z",
+    "live_location": "https://www.google.com/maps?q=22.5,89.0",
+    "image": "https://img.icons8.com/color/48/000000/cyclone.png"
+  },
+  {
+    "id": 2,
+    "type": "Flood",
+    "name": "Flood in Sylhet",
+    "severity": "Moderate",
+    "location": { "lat": 24.9, "lon": 91.9, "city": "Sylhet" },
+    "water_level": "5.5 m",
+    "alert_level": "Orange",
+    "date": "2025-10-22T14:00:00Z",
+    "live_location": "https://www.google.com/maps?q=24.9,91.9",
+    "image": "https://img.icons8.com/color/48/000000/flood.png"
+  },
+  {
+    "id": 3,
+    "type": "Cyclone",
+    "name": "Cyclone Bela",
+    "severity": "Moderate",
+    "location": { "lat": 21.8, "lon": 90.1, "city": "Noakhali" },
+    "predicted_path": [
+      { "lat": 21.8, "lon": 90.1 },
+      { "lat": 22.3, "lon": 90.7 }
+    ],
+    "wind_speed": "90 km/h",
+    "alert_level": "Orange",
+    "date": "2025-11-01T06:00:00Z",
+    "live_location": "https://www.google.com/maps?q=21.8,90.1",
+    "image": "https://img.icons8.com/color/48/000000/cyclone.png"
+  },
+  {
+    "id": 4,
+    "type": "Flood",
+    "name": "Flood in Barisal",
+    "severity": "Severe",
+    "location": { "lat": 22.7, "lon": 90.4, "city": "Barisal" },
+    "water_level": "6.8 m",
+    "alert_level": "Red",
+    "date": "2025-10-25T12:00:00Z",
+    "live_location": "https://www.google.com/maps?q=22.7,90.4",
+    "image": "https://img.icons8.com/color/48/000000/flood.png"
+  },
+  {
+    "id": 5,
+    "type": "Cyclone",
+    "name": "Cyclone Daru",
+    "severity": "Severe",
+    "location": { "lat": 23.1, "lon": 89.6, "city": "Bhola" },
+    "predicted_path": [
+      { "lat": 23.1, "lon": 89.6 },
+      { "lat": 23.7, "lon": 90.2 }
+    ],
+    "wind_speed": "130 km/h",
+    "alert_level": "Red",
+    "date": "2025-11-05T09:00:00Z",
+    "live_location": "https://www.google.com/maps?q=23.1,89.6",
+    "image": "https://img.icons8.com/color/48/000000/cyclone.png"
+  },
+  {
+    "id": 6,
+    "type": "Flood",
+    "name": "Flood in Rangpur",
+    "severity": "Moderate",
+    "location": { "lat": 25.7, "lon": 89.2, "city": "Rangpur" },
+    "water_level": "4.2 m",
+    "alert_level": "Yellow",
+    "date": "2025-10-28T15:00:00Z",
+    "live_location": "https://www.google.com/maps?q=25.7,89.2",
+    "image": "https://img.icons8.com/color/48/000000/flood.png"
+  },
+  {
+    "id": 7,
+    "type": "Cyclone",
+    "name": "Cyclone Feroz",
+    "severity": "Moderate",
+    "location": { "lat": 22.0, "lon": 90.5, "city": "Lakshmipur" },
+    "predicted_path": [
+      { "lat": 22.0, "lon": 90.5 },
+      { "lat": 22.6, "lon": 91.1 }
+    ],
+    "wind_speed": "95 km/h",
+    "alert_level": "Orange",
+    "date": "2025-11-10T07:00:00Z",
+    "live_location": "https://www.google.com/maps?q=22.0,90.5",
+    "image": "https://img.icons8.com/color/48/000000/cyclone.png"
+  },
+  {
+    "id": 8,
+    "type": "Flood",
+    "name": "Flood in Khulna",
+    "severity": "Severe",
+    "location": { "lat": 22.8, "lon": 89.6, "city": "Khulna" },
+    "water_level": "7.0 m",
+    "alert_level": "Red",
+    "date": "2025-10-30T10:00:00Z",
+    "live_location": "https://www.google.com/maps?q=22.8,89.6",
+    "image": "https://img.icons8.com/color/48/000000/flood.png"
+  },
+  {
+    "id": 9,
+    "type": "Cyclone",
+    "name": "Cyclone Hina",
+    "severity": "Moderate",
+    "location": { "lat": 21.5, "lon": 91.0, "city": "Feni" },
+    "predicted_path": [
+      { "lat": 21.5, "lon": 91.0 },
+      { "lat": 22.0, "lon": 91.5 }
+    ],
+    "wind_speed": "100 km/h",
+    "alert_level": "Orange",
+    "date": "2025-11-12T05:00:00Z",
+    "live_location": "https://www.google.com/maps?q=21.5,91.0",
+    "image": "https://img.icons8.com/color/48/000000/cyclone.png"
+  },
+  {
+    "id": 10,
+    "type": "Flood",
+    "name": "Flood in Mymensingh",
+    "severity": "Moderate",
+    "location": { "lat": 24.7, "lon": 90.4, "city": "Mymensingh" },
+    "water_level": "5.0 m",
+    "alert_level": "Orange",
+    "date": "2025-10-27T14:00:00Z",
+    "live_location": "https://www.google.com/maps?q=24.7,90.4",
+    "image": "https://img.icons8.com/color/48/000000/flood.png"
+  },
+  {
+    "id": 11,
+    "type": "Cyclone",
+    "name": "Cyclone Isha",
+    "severity": "Severe",
+    "location": { "lat": 23.3, "lon": 90.8, "city": "Noakhali" },
+    "predicted_path": [
+      { "lat": 23.3, "lon": 90.8 },
+      { "lat": 23.9, "lon": 91.4 }
+    ],
+    "wind_speed": "125 km/h",
+    "alert_level": "Red",
+    "date": "2025-11-15T08:00:00Z",
+    "live_location": "https://www.google.com/maps?q=23.3,90.8",
+    "image": "https://img.icons8.com/color/48/000000/cyclone.png"
+  }
+]
