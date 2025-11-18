@@ -23,12 +23,12 @@ const router = createBrowserRouter([
             {
                 path:'/',
                 element:<Home/>,
-                
+                loader:()=>fetch('https://eonet.gsfc.nasa.gov/api/v2.1/events?limit=10'),
               
             },
             {
                 path:'/about',
-                element:<h1 className="text-center mt-12 text-4xl">Comming soon</h1>,
+                element:<h1 className="text-center mt-12 text-4xl">Coming soon</h1>,
                
             },
             {

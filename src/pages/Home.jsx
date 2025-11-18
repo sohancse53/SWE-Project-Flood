@@ -9,13 +9,22 @@ import RecentDisasters from '../components/RecentDisasters';
 
 const Home = () => {
   
+    const data = useLoaderData();
+    const events = data.events;
+    const latest = []
+    events.forEach(event => {
+        latest.push(event.title);
+    });
+    
+    console.log(latest);
+    
     
     return (
         <div>
             <title>Home</title>
+           <Headlines latest={latest}/>
            <Banner/>
-           {/* <Headlines disasters={disasters}/> */}
-           {/* <PopularGames disasters={disasters}/> */}
+           
            <RecentDisasters/>
            <NewsLetter/>
         

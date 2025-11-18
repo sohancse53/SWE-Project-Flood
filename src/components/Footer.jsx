@@ -18,7 +18,7 @@ const Footer = () => {
         <p>
         Flood & Disaster Alert
           <br />
-          Providing reliable Games since 2025
+          Providing reliable News since 2025
         </p>
       </aside>
       <nav>
